@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  "Nunito Sans", sans-serif;
+}
+
+.NavBar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    border: 1px solid #e0e0e0;
+}
+
+.NavBar > ul:nth-child(1) {
+    display: flex;
+    /* justify-content: left; */
+    gap : 10px;
+    align-items: center;
+}
+
+.NavBar > ul:nth-child(1) > li {
+    margin: 10px;
+    padding: 10px;
+    font-weight: 600;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.SearchMain {
+    height: 40px;
+    border-radius: 4px;
+    width: 18vw;
+    border: none;
+    color: black;
+    font-weight: 100;
+    font-size: 15px;
+    outline: none;
+    background-color: #f4f4f4;
+
+}
+
+.SearchMain::placeholder{
+    font-weight: 100;
+    color: gray;
+    /* text-align: 1; */
+    font-size: 17px;
+    
+}
+.search-box > span{
+/* position: absolute; */
+color: gray;
+height: 30px;
+font-weight: lighter;
+font-size: 30px;
+margin-left: 4%;
+
+}
+
+.search-box{
+margin: 10%;
+/* margin-left: 30%;     */
+display: flex;
+align-items:center;
+/* border: 2px solid #e0e0e0; */
+border-radius: 4px;
+background-color: #f4f4f4;
+
+}
+
+
+.SigninButton {
+  color: rgba(255, 255, 255, 0.871);
+height: 40px;
+font-weight: lighter;
+font-size: 16px;
+border: none;
+border-radius: 4px;
+margin: 10%;
+width: 12vh;
+background-color: #181818;
+/* margin-left: 4%; */
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+
+}
+
+
+.cart span {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    cursor: pointer;
+    background-color: #181818;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+}
+
+.NavBar > ul:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap :1%;
+    align-items: center;
+    
+}
+
+.NavBar > ul:nth-child(2) > li {
+    margin: 5px;
+    /* padding: 10px; */
+    font-weight: 600;
+    color: black;
+    list-style: none;
+    font-size: 15px;
+}
+
+.cart span:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.SigninButton:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+.NavBar > ul:nth-child(1) > li:hover {
+     color: rgb(91, 91, 91);
+    transform: translateY(-2px);
+}
