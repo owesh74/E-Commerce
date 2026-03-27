@@ -1,12 +1,14 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
     font-family:  "Nunito Sans", sans-serif;
+    color : #7a1c7a
 }
 
 .NavBar {
-    background-color: transparent;
-    position: sticky;
+    background-color: #ffffff;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,7 +32,7 @@ body {
     margin: 10px;
     padding: 10px;
     font-weight: 600;
-    color: black;
+    /* color: black; */
     list-style: none;
     font-size: 15px;
     transition: all 0.3s ease;
@@ -42,7 +44,7 @@ body {
     border-radius: 4px;
     width: 18vw;
     border: none;
-    color: black;
+    /* color: black; */
     font-weight: 100;
     font-size: 15px;
     outline: none;
@@ -59,11 +61,12 @@ body {
 }
 .search-box > span{
 /* position: absolute; */
-color: gray;
+/* color: gray; */
 height: 30px;
 font-weight: lighter;
 font-size: 30px;
 margin-left: 4%;
+color: gray;
 
 }
 
@@ -75,7 +78,7 @@ align-items:center;
 /* border: 2px solid #e0e0e0; */
 border-radius: 4px;
 background-color: #f4f4f4;
-
+border: 1px solid #7a1c7a;
 }
 
 
@@ -88,7 +91,7 @@ border: none;
 border-radius: 10px;
 margin: 10%;
 width: 12vh;
-background-color: #181818;
+background-color: #7a1c7a;
 /* margin-left: 4%; */
     transition: all 0.3s ease;
     cursor: pointer;
@@ -102,7 +105,7 @@ background-color: #181818;
     font-weight: 100;
     color: white;
     cursor: pointer;
-    background-color: #181818;
+    background-color: #7a1c7a;
     height: 35px;
     width: 35px;
     display: flex;
@@ -125,28 +128,28 @@ background-color: #181818;
     margin: 5px;
     /* padding: 10px; */
     font-weight: 600;
-    color: black;
+    /* color: black; */
     list-style: none;
     font-size: 15px;
 }
 
 .cart span:hover {
     background: white;
-    color: black;
+    color: #7a1c7a;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .SigninButton:hover {
     background: white;
-    color: black;
+    color: #7a1c7a;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
 .NavBar > ul:nth-child(1) > li:hover {
-     color: rgb(91, 91, 91);
+     color: #ae29ae;
     transform: translateY(-2px);
 }
 
@@ -164,6 +167,7 @@ background-color: #181818;
     border: 1px solid #e6e6e6;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 10px;
+    color: black;
     display: none;
     border-radius: 6px;
     
@@ -183,6 +187,7 @@ background-color: #181818;
 }
 .slider {
     width: 100%;   
+    margin-top: 50px;
     overflow: hidden;
 }
 
@@ -268,6 +273,7 @@ background-color: #181818;
     align-items: center;
     font-weight: 900;
     margin: 40px;
+    color: black;
 }
 
 .HomeGrids {
@@ -308,6 +314,7 @@ width: 19.4vw;
    background-color: #878787;
    margin: 0;
    height: 25px;
+   color: black;
     
 }
 
@@ -336,4 +343,52 @@ width: 19.4vw;
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+    color: black;
+}
+
+
+
+.footer {
+    background-color: #ffffff; /* pink shade */
+    padding: 40px 60px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer h3 {
+    color: #7a1c7a;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #7a1c7a;
+    font-size: 14px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+}
+
+/* Input box */
+.footer input {
+    padding: 8px;
+    border: 1px solid #7a1c7a;
+    background: transparent;
+    margin-top: 10px;
+    width: 200px;
+}
+
+/* Social icons */
+.social span {
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
 }
